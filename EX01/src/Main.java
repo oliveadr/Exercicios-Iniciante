@@ -1,5 +1,7 @@
+/* Faça um algoritmo que receba dois números e
+exiba o resultado da sua soma;
+*/
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
