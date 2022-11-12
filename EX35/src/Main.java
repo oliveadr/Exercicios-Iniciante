@@ -14,20 +14,22 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("informe o tipo de cliente:");
         String cliente = sc.next();
-        System.out.println("informe a qtd de KW/h consumido:");
+        System.out.println("informe as qtds de KW/h consumidos:");
         double valor = sc.nextDouble();
-        double total=0;
-        if (cliente == 'residencia'){
+        double total = 0;
+        // comparacao if com string usa o metodo var.equals
+        if (cliente.equals("residencia")){
             total = valor * 0.60;
-            System.out.println("teste");
-        } else if (cliente == "comercio") {
+
+        } else if (cliente.equals("comercio")) {
             total = valor * 0.48;
 
-        } else if (cliente == "industria") {
+        } else if (cliente.equals("industria")) {
             total= valor * 1.29;
-        }
-        System.out.println("total: "+valor);
 
+        }
+
+        System.out.println("total: " + total);
 
     }
 }
